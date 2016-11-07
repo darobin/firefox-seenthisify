@@ -5,13 +5,13 @@
   "description": "Use this to post content to SeenThis.net easily",
   "homepage_url": "https://github.com/darobin/seenthisify",
   "icons": {
-    "16": "icons/favicon.ico"
+    "48": "icons/seenthis-48.png"
   },
   "permissions": [
     "activeTab"
   ],
   "browser_action": {
-    "default_icon": "icons/favicon.ico",
+    "default_icon": "icons/seenthis.svg",
     "default_title": "SeenThisify"
   },
   "background": {
