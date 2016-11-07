@@ -1,10 +1,6 @@
 
-window.open(
-  `http://seenthis.net/#ajouter=${
-    encodeURIComponent(document.title)
-  }&url_site=${
-    encodeURIComponent(document.location)
-  }&extrait=${
-    encodeURIComponent(window.getSelection() || '')
-  }`
-);
+chrome.runtime.sendMessage({
+  title:  document.title,
+  url:    document.location,
+  text:   window.getSelection() || '',
+});
